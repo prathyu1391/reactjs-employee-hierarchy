@@ -1,0 +1,188 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+.header {
+  height: 45px;
+  line-height: 45px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 9999;
+  display: block;
+  margin: 0;
+  min-width: 1024px;
+  height: 48px;
+  max-height: 44px;
+  background: #395d95;
+  font-size: 17px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  padding-left: 60px;
+  color: #ccc;
+}
+.follow {
+  float: right;
+  margin-right: 79px;
+}
+.follow img {
+  width: 25px;
+  position: relative;
+  top: 7px;
+}
+
+body {
+  font-family: "Sen", sans-serif;
+  background: #fff;
+}
+
+.container {
+  width: 95%;
+}
+
+.follow a {
+  color: #131313;
+  text-decoration: none;
+}
+
+.org-tree ul {
+  padding-top: 20px;
+  position: relative;
+
+  transition: all 0.5s;
+}
+
+.org-tree li {
+  float: left;
+  text-align: center;
+  list-style-type: none;
+  position: relative;
+  padding: 20px 5px 0 5px;
+
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+}
+
+/*We will use ::before and ::after to draw the connectors*/
+
+.org-tree li::before,
+.org-tree li::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 50%;
+  border-top: 1px solid #ccc;
+  width: 50%;
+  height: 20px;
+}
+.org-tree li::after {
+  right: auto;
+  left: 50%;
+  border-left: 1px solid #ccc;
+}
+
+.org-tree li:only-child::after,
+.org-tree li:only-child::before {
+  display: none;
+}
+
+.org-tree li:only-child {
+  padding-top: 0;
+}
+
+.org-tree li:first-child::before,
+.org-tree li:last-child::after {
+  border: 0 none;
+}
+.org-tree li:last-child::before {
+  border-right: 1px solid #ccc;
+}
+.org-tree li:last-child::before {
+  border-radius: 0 5px 0 0;
+}
+.org-tree li:first-child::after {
+  border-radius: 5px 0 0 0;
+}
+
+.org-tree ul ul::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  border-left: 1px solid #ccc;
+  width: 0;
+  height: 20px;
+}
+
+
+.org-tree li a:hover,
+.org-tree li a:hover + ul li a {
+  background: #c8e4f8;
+  color: #000;
+  border: 1px solid #94a0b4;
+}
+
+.org-tree li a:hover + ul li::after,
+.org-tree li a:hover + ul li::before,
+.org-tree li a:hover + ul::before,
+.org-tree li a:hover + ul ul::before {
+  border-color: #94a0b4;
+}
+
+.employeeTile {
+  position: relative;
+  padding-top: 5px;
+}
+
+.employeeTile .employee-details {
+    background: #395d95;
+    height: 150px;
+    text-align: center;
+    width: 150px;
+    padding-top: 5px;
+    border-radius: 16px 16px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.employeeTile .employee-details h2 {
+  font-weight: 600;
+  line-height: 20px;
+}
+.employeeTile .employee-details p {
+  line-height: 20px;
+}
+
+.title {
+    font-size: 16px;
+}
+.button{
+  padding: 4px 10px;
+  font-size: 16px;
+  margin-top: 12px;
+  border-radius: 3px;
+  background-color: #bdc6af;
+}
+.addEmployeeDetails{
+  border: 3px solid black;
+  padding: 10px 30px;
+  margin: 20px 5px 5px;
+  font-size: 25px;
+  color:#7b887c;
+}
+.addEmployeeDetails label, .addEmployeeDetails input, .addEmployeeDetails button{
+  padding: 5px 10px;
+  margin:0 5px;
+}
+.error{
+  color: #d93636;
+  font-size:16px;
+}
+.name:{
+  font-size: 16px;
+}

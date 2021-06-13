@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "department":"",
+    "name": "Tomasz polaski",
+    "title": "CEO",
+    "totalReports": 2,
+    "reportees": [
+        {
+          "id": 2,
+          "department": "",
+          "name": "Kerry peter",
+          "title": "CTO",
+          "totalReports": 1,
+          "reportees": []
+        },{
+          "id": 3,
+          "department": "",
+          "name": "Kerry peter",
+          "title": "VP",
+          "totalReports": 1,
+          "reportees": []
+        }
+      ]
+    }
+]
